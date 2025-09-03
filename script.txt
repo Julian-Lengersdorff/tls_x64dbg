@@ -115,7 +115,7 @@ secret_ptr = [temp_addr]
 log "secret_ptr: {p:secret_ptr}"
 
 // Display the secret data using the actual size
-log "Secret data ({d:secret_size} bytes): {hex@secret_ptr,secret_size}"
+log "Secret data ({d:secret_size} bytes): {mem;secret_size@secret_ptr}"
 
 run
 ret
