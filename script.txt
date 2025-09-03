@@ -39,12 +39,15 @@ log "Label: {utf8@secret_kind}"
 // Compare first character to distinguish between client/server
 secret_index = 0
 cmp byte:[saved_secret_kind], 63  // 'c'
+jne check_server_secret
 secret_index = 0xc
 je get_struct
+
+check_server_secret:
 cmp byte:[saved_secret_kind], 73  // 's' 
 secret_index = 7
-cmp secret_index, 0
-je ignore_secret
+jne ignore_secret
+
 
 get_struct:
 // Get the struct storing the secret
