@@ -3,6 +3,16 @@ secret_str = 0
 saved_secret_kind = 0
 saved_bdd = 0
 
+c_hs_addr = 0
+s_hs_addr = 0
+c_ap_addr = 0
+s_ap_addr = 0
+
+time_stamp = 0
+secret_data = 0
+
+
+
 // find the derive_secret function in the ncryptsslp module
 findallmem 0, "48 8B C4 44 88 48 20 4C 89 40 18 48 89 50 10 53 56 41 54 41 55 41 56 41 57 48 81 EC A8 00 00 00 33 DB 33 F6 89 9C 24 E0 00 00 00 45 0F B6 E1 4D 8B F0 4C 8B F9 48 85 C9 0F 84 08 06 00 00 48 8B", -1, system
 cmp $result, 0
@@ -57,6 +67,9 @@ get_struct:
 
 // callback on exit derive_secret
 on_leave_cb:
+    // Save the timestamp
+    gettimemicros
+    mov time_stamp, $result
 
     // Read the secret pointer from the structs and set a Wacthpoint on it 
     // This part was taken from https://github.com/ngo/win-frida-scripts/blob/master/lsasslkeylog-easy/keylog.js
@@ -110,7 +123,9 @@ on_leave_cb:
 
     // Display the secret data using the actual size
     log "Secret data ({d:secret_size} bytes): {mem;secret_size@secret_ptr}"
-    
+
+    logmemvars saved_secret_kind,secret_ptr,secret_size,time_stamp   
+
     // If label already exists, skip
     labellist
     i = 0
@@ -132,19 +147,89 @@ after_loop:
     //membp secret_ptr, 1, w
     bph secret_ptr, w, 1
     SetHardwareBreakpointCommand secret_ptr, "scriptcmd call on_wp_hit"
-    lbl secret_ptr, "bp_set"
+    lbl secret_ptr, "{utf8@saved_secret_kind}"
     log "Set WP for {utf8@saved_secret_kind} on {p:secret_ptr}"
 
+
+    // set the ptr globally
+    // Compare saved_secret_kind to known labels and set global pointer variables
+    cmp byte:[saved_secret_kind], 63  // 'c'
+    je set_c_hs_ptr
+    cmp byte:[saved_secret_kind], 73  // 's'
+    je set_s_hs_ptr
+    cmp byte:[saved_secret_kind], 97  // 'a'
+    je set_c_ap_ptr
+    cmp byte:[saved_secret_kind], 73  // 's'
+    je set_s_ap_ptr
+    jmp end_set_ptr
+
+set_c_hs_ptr:
+    set c_hs_addr, secret_ptr
+    jmp end_set_ptr
+
+set_s_hs_ptr:
+    set s_hs_addr, secret_ptr
+    jmp end_set_ptr
+
+set_c_ap_ptr:
+    set c_ap_addr, secret_ptr
+    jmp end_set_ptr
+
+set_s_ap_ptr:
+    set s_ap_addr, secret_ptr
+    jmp end_set_ptr
+
+end_set_ptr:
     run
     ret
 
 on_wp_hit:
-    log "WP hit"
+    // Save the timestamp
+    gettimemicros
+    mov time_stamp, $result
+
+    hit_addr = cip
+    
+
+    cmp cip, c_hs_addr
+    je set_c_hs
+    cmp cip, s_hs_addr
+    je set_s_hs
+    cmp cip, c_ap_addr
+    je set_c_ap
+    cmp cip, s_ap_addr
+    je set_s_ap
+
+    do_wp:
+    log "Watchpoint hit for {utf8@saved_secret_kind} at address {p:hit_addr}"
+    log "Current data at watchpoint: {mem;20@hit_addr}"
+    
+    logmemvars saved_secret_kind,secret_ptr,secret_size,time_stamp   
+
+    run
     ret
+
+set_c_hs:
+    saved_secret_kind = "c hs secret"
+    jmp do_wp
+
+set_s_hs:
+    saved_secret_kind = "s hs secret"
+    jmp do_wp
+
+set_c_ap:
+    saved_secret_kind = "c ap secret"
+    jmp do_wp
+
+set_s_ap:
+    saved_secret_kind = "s ap secret"
+    jmp do_wp
 
 already_exists:
     log "Memory Breakpoint already active for {utf8@saved_secret_kind} on {p:secret_ptr} "
     ret
+
+
 
 
 // ERROR TYPES

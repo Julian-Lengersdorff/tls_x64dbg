@@ -1,0 +1,233 @@
+Log will be redirected to C:\Users\julia\Documents\dbg\x64\logs\x64dbg_log.txt.
+Database file: C:\Users\julia\Downloads\snapshot_2025-08-19_19-40\release\x64\db\lsass.exe.dd64
+Loading database from C:\Users\julia\Downloads\snapshot_2025-08-19_19-40\release\x64\db\lsass.exe.dd64 16ms
+Process Started: 00007FF7E6B60000 C:\Windows\System32\lsass.exe
+  C:\WINDOWS\system32\lsass.exe
+  argv[0]: C:\WINDOWS\system32\lsass.exe
+Set hardware breakpoint on 000001C72FBD2240!
+Set hardware breakpoint on 000001C72FBD2360!
+Set hardware breakpoint on 000001C72FBD5AA0!
+Set hardware breakpoint on 000001C72FBD5D00!
+Attached to process!
+DLL Loaded: 00007FFCEFF40000 C:\Windows\System32\ntdll.dll
+Thread 808 created, Entry: 00007FFCECBBCE70, Parameter: 0000000000000000
+Thread 812 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A50120DC0
+Thread 824 created, Entry: 00007FFCED573780, Parameter: 0000000000000000
+Thread 828 created, Entry: 00007FFCED573780, Parameter: 0000003BDA67F9D0
+Thread 860 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A50177170
+Thread 3664 created, Entry: 00007FFCED605050, Parameter: 0000003BDA97FE98
+Thread 5104 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A507C83E0
+Thread 7012 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A507C9220
+Thread 3348 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A507C95B0
+Thread 8124 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A507C8E90
+Thread 8416 created, Entry: ntdll.00007FFCEFFD2220, Parameter: 0000017A507C8B00
+DLL Loaded: 00007FFCEED30000 C:\Windows\System32\kernel32.dll
+DLL Loaded: 00007FFCED6C0000 C:\Windows\System32\KernelBase.dll
+DLL Loaded: 00007FFCEF2A0000 C:\Windows\System32\rpcrt4.dll
+DLL Loaded: 00007FFCECAC0000 C:\Windows\System32\lsasrv.dll
+DLL Loaded: 00007FFCED570000 C:\Windows\System32\ucrtbase.dll
+DLL Loaded: 00007FFCED200000 C:\Windows\System32\msvcp_win.dll
+DLL Loaded: 00007FFCECA70000 C:\Windows\System32\lsaadt.dll
+DLL Loaded: 00007FFCEEC00000 C:\Windows\System32\sechost.dll
+DLL Loaded: 00007FFCEC960000 C:\Windows\System32\samsrv.dll
+DLL Loaded: 00007FFCEF900000 C:\Windows\System32\advapi32.dll
+DLL Loaded: 00007FFCEEB50000 C:\Windows\System32\msvcrt.dll
+DLL Loaded: 00007FFCEDB50000 C:\Windows\System32\crypt32.dll
+DLL Loaded: 00007FFCECF60000 C:\Windows\System32\bcrypt.dll
+DLL Loaded: 00007FFCEC920000 C:\Windows\System32\ncrypt.dll
+DLL Loaded: 00007FFCEC8D0000 C:\Windows\System32\ntasn1.dll
+DLL Loaded: 00007FFCEC880000 C:\Windows\System32\vbsapi.dll
+DLL Loaded: 00007FFCEC850000 C:\Windows\System32\bcd.dll
+DLL Loaded: 00007FFCEC7E0000 C:\Windows\System32\wldp.dll
+DLL Loaded: 00007FFCEEF00000 C:\Windows\System32\combase.dll
+DLL Loaded: 00007FFCED0A0000 C:\Windows\System32\bcryptprimitives.dll
+Skipping unsupported debug type IMAGE_DEBUG_TYPE_POGO in module msprivs.dll...
+Skipping unsupported debug type IMAGE_DEBUG_TYPE_REPRO in module msprivs.dll...
+Skipping unsupported debug type unknown in module msprivs.dll...
+Did not find any supported debug types in module msprivs.dll!
+DLL Loaded: 0000017A51460000 C:\Windows\System32\msprivs.dll
+DLL Loaded: 00007FFCEC7C0000 C:\Windows\System32\netprovfw.dll
+DLL Loaded: 00007FFCEC790000 C:\Windows\System32\joinutil.dll
+DLL Loaded: 00007FFCEC770000 C:\Windows\System32\msasn1.dll
+DLL Loaded: 00007FFCEC730000 C:\Windows\System32\negoexts.dll
+DLL Loaded: 00007FFCEC710000 C:\Windows\System32\cryptsp.dll
+DLL Loaded: 00007FFCEC700000 C:\Windows\System32\cryptbase.dll
+DLL Loaded: 00007FFCEC590000 C:\Windows\System32\kerberos.dll
+DLL Loaded: 00007FFCEECB0000 C:\Windows\System32\Wldap32.dll
+DLL Loaded: 00007FFCEC550000 C:\Windows\System32\kerb3961.dll
+DLL Loaded: 00007FFCEC510000 C:\Windows\System32\KerbClientShared.dll
+DLL Loaded: 00007FFCEF3C0000 C:\Windows\System32\ws2_32.dll
+DLL Loaded: 00007FFCEC4E0000 C:\Windows\System32\userenv.dll
+DLL Loaded: 00007FFCEC4B0000 C:\Windows\System32\gpapi.dll
+DLL Loaded: 00007FFCEC440000 C:\Windows\System32\mswsock.dll
+DLL Loaded: 00007FFCEC3A0000 C:\Windows\System32\msv1_0.dll
+DLL Loaded: 00007FFCEC380000 C:\Windows\System32\NtlmShared.dll
+DLL Loaded: 00007FFCEC270000 C:\Windows\System32\netlogon.dll
+DLL Loaded: 00007FFCEC250000 C:\Windows\System32\gmsaclient.dll
+DLL Loaded: 00007FFCEC200000 C:\Windows\System32\logoncli.dll
+DLL Loaded: 00007FFCEC1F0000 C:\Windows\System32\dsparse.dll
+DLL Loaded: 00007FFCEC1B0000 C:\Windows\System32\TSpkg.dll
+DLL Loaded: 00007FFCEC160000 C:\Windows\System32\sspicli.dll
+DLL Loaded: 00007FFCEC0F0000 C:\Windows\System32\pku2u.dll
+DLL Loaded: 00007FFCEC0D0000 C:\Windows\System32\cryptdll.dll
+DLL Loaded: 00007FFCEC020000 C:\Windows\System32\cloudAP.dll
+DLL Loaded: 00007FFCEBFE0000 C:\Windows\System32\ntmarta.dll
+DLL Loaded: 00007FFCECF90000 C:\Windows\System32\profapi.dll
+DLL Loaded: 00007FFCEBED0000 C:\Windows\System32\aadcloudap.dll
+DLL Loaded: 00007FFCEBE70000 C:\Windows\System32\MicrosoftAccountCloudAP.dll
+DLL Loaded: 00007FFCEBE30000 C:\Windows\System32\rsaenh.dll
+DLL Loaded: 00007FFCEBDD0000 C:\Windows\System32\wdigest.dll
+DLL Loaded: 00007FFCEBD00000 C:\Windows\System32\schannel.dll
+DLL Loaded: 00007FFCEBCA0000 C:\Windows\System32\SFAPM.dll
+DLL Loaded: 00007FFCECD30000 C:\Windows\System32\powrprof.dll
+DLL Loaded: 00007FFCECD10000 C:\Windows\System32\umpdc.dll
+DLL Loaded: 00007FFCEBC80000 C:\Windows\System32\kernel.appcore.dll
+DLL Loaded: 00007FFCEBC20000 C:\Windows\System32\dpapisrv.dll
+DLL Loaded: 00007FFCEBC10000 C:\Windows\System32\sspisrv.dll
+DLL Loaded: 00007FFCEBB40000 C:\Windows\System32\kdcpw.dll
+DLL Loaded: 00007FFCEBAE0000 C:\Windows\System32\scecli.dll
+DLL Loaded: 00007FFCEB9A0000 C:\Windows\System32\dnsapi.dll
+DLL Loaded: 00007FFCEB960000 C:\Windows\System32\IPHLPAPI.DLL
+DLL Loaded: 00007FFCEDCD0000 C:\Windows\System32\nsi.dll
+DLL Loaded: 00007FFCEB930000 C:\Windows\System32\samlib.dll
+DLL Loaded: 00007FFCEB910000 C:\Windows\System32\samcli.dll
+DLL Loaded: 00007FFCECC80000 C:\Windows\System32\winsta.dll
+DLL Loaded: 00007FFCEB650000 C:\Windows\System32\netutils.dll
+DLL Loaded: 00007FFCEA2D0000 C:\Windows\System32\wtsapi32.dll
+DLL Loaded: 00007FFCEA2C0000 C:\Windows\System32\secur32.dll
+DLL Loaded: 00007FFCE7C20000 C:\Windows\System32\wevtapi.dll
+DLL Loaded: 00007FFCDD090000 C:\Windows\System32\ncryptsslp.dll
+DLL Loaded: 00007FFCDCFF0000 C:\Windows\System32\ncryptprov.dll
+DLL Loaded: 00007FFCDCFC0000 C:\Windows\System32\dssenh.dll
+DLL Loaded: 00007FFCDC420000 C:\Windows\System32\SecureTimeAggregator.dll
+DLL Loaded: 00007FFCDC3E0000 C:\Windows\System32\cryptnet.dll
+DLL Loaded: 00007FFCDCE90000 C:\Windows\System32\camext.dll
+DLL Loaded: 00007FFCD3380000 C:\Windows\System32\keyiso.dll
+DLL Loaded: 00007FFCEB6B0000 C:\Windows\System32\authz.dll
+DLL Loaded: 00007FFCEBAD0000 C:\Windows\System32\dpapi.dll
+DLL Loaded: 00007FFCD0D10000 C:\Windows\System32\vaultsvc.dll
+DLL Loaded: 00007FFCD0410000 C:\Windows\System32\cryptngc.dll
+DLL Loaded: 00007FFCD4B80000 C:\Windows\System32\ngcksp.dll
+DLL Loaded: 00007FFCEF730000 C:\Windows\System32\user32.dll
+DLL Loaded: 00007FFCED070000 C:\Windows\System32\win32u.dll
+DLL Loaded: 00007FFCEDF60000 C:\Windows\System32\gdi32.dll
+DLL Loaded: 00007FFCED2B0000 C:\Windows\System32\gdi32full.dll
+DLL Loaded: 00007FFCB71B0000 C:\Windows\System32\ngcpopkeysrv.dll
+DLL Loaded: 00007FFCD0D80000 C:\Windows\System32\PCPKsp.dll
+DLL Loaded: 00007FFCE69A0000 C:\Windows\System32\tbs.dll
+DLL Loaded: 00007FFCEFE50000 C:\Windows\System32\clbcatq.dll
+DLL Loaded: 00007FFCED3F0000 C:\Windows\System32\WinTypes.dll
+DLL Loaded: 00007FFCB3D50000 C:\Windows\System32\VaultCDS.dll
+DLL Loaded: 00007FFCEE1A0000 C:\Windows\System32\ole32.dll
+DLL Loaded: 00007FFCEF660000 C:\Windows\System32\coml2.dll
+Breakpoint deleted!
+Breakpoint deleted!
+Breakpoint deleted!
+Hardware breakpoint deleted!
+Hardware breakpoint deleted!
+Hardware breakpoint deleted!
+Hardware breakpoint deleted!
+Error setting breakpoint at 00007FFCF00A3A64! (SetBPX)
+paused!
+paused!
+1 occurrences found in 156ms
+found Pattern
+Found Pattern at 00007FFCDD098000
+Breakpoint at 00007FFCDD098000 set!
+Entered Derive_secrets()
+Label: c hs traffic
+mybdd: 0000017A50B53220 at argument index 12
+Breakpoint at 00007FFCDD098F4D set!
+INT3 breakpoint at ncryptsslp.00007FFCDD098000!
+INT3 breakpoint at ncryptsslp.00007FFCDD098F4D!
+Setting WP for c hs traffic
+Reading struct_3lss from: 0000017A50B53230
+struct_3lss: 0000017A50B41BF0
+Reading struct_RUUU from: 0000017A50B41C10
+struct_RUUU: 0000017A50BACB50
+Reading struct_YKSM from: 0000017A50BACB60
+struct_YKSM: 0000017A50BACB70
+Secret size: 32
+secret_ptr: 0000017A50B532C0
+Secret data (32 bytes): 54EFFEE4C6C5E359D876C286750DC4A567A617F0F8E3AA5B03A5D25597BAD7B4
+4 label(s) listed in Reference View
+Hardware breakpoint at 0000017A50B532C0 set!
+Set WP for c hs traffic on 0000017A50B532C0
+Entered Derive_secrets()
+Label: s hs traffic
+mybdd: 0000017A50B53100 at argument index 7
+Breakpoint at 00007FFCDD098F80 set!
+INT3 breakpoint at ncryptsslp.00007FFCDD098000!
+INT3 breakpoint at ncryptsslp.00007FFCDD098F80!
+Setting WP for s hs traffic
+Reading struct_3lss from: 0000017A50B53110
+struct_3lss: 0000017A50B41800
+Reading struct_RUUU from: 0000017A50B41820
+struct_RUUU: 0000017A50BAFA10
+Reading struct_YKSM from: 0000017A50BAFA20
+struct_YKSM: 0000017A50BAFA30
+Secret size: 32
+secret_ptr: 0000017A50B53E60
+Secret data (32 bytes): 363C4C35BA2C55C392D23C21BE9DEBF99BE65B9DB7964FF477C69CBA0F53E45F
+5 label(s) listed in Reference View
+Hardware breakpoint at 0000017A50B53E60 set!
+Set WP for s hs traffic on 0000017A50B53E60
+Entered Derive_secrets()
+INT3 breakpoint at ncryptsslp.00007FFCDD098000!
+Label: exp master
+INT3 breakpoint at ncryptsslp.00007FFCDD098000!
+Entered Derive_secrets()
+Label: c ap traffic
+mybdd: 0000017A50B51AE0 at argument index 12
+Breakpoint already set!
+INT3 breakpoint at ncryptsslp.00007FFCDD098F4D!
+Setting WP for c ap traffic
+Reading struct_3lss from: 0000017A50B51AF0
+struct_3lss: 0000017A50B40B50
+Reading struct_RUUU from: 0000017A50B40B70
+struct_RUUU: 0000017A50BAC050
+Reading struct_YKSM from: 0000017A50BAC060
+struct_YKSM: 0000017A50BAC070
+Secret size: 32
+secret_ptr: 0000017A50B51A40
+Secret data (32 bytes): ACF57E7D471B82B3925BEA32823C99D633CFA83CA1F996BAF3497F1818F9C751
+6 label(s) listed in Reference View
+Hardware breakpoint at 0000017A50B51A40 set!
+Set WP for c ap traffic on 0000017A50B51A40
+Entered Derive_secrets()
+Label: s ap traffic
+mybdd: 0000017A50B51A80 at argument index 7
+Breakpoint already set!
+INT3 breakpoint at ncryptsslp.00007FFCDD098000!
+INT3 breakpoint at ncryptsslp.00007FFCDD098F80!
+Setting WP for s ap traffic
+Reading struct_3lss from: 0000017A50B51A90
+struct_3lss: 0000017A50B40370
+Reading struct_RUUU from: 0000017A50B40390
+struct_RUUU: 0000017A50BAF750
+Reading struct_YKSM from: 0000017A50BAF760
+struct_YKSM: 0000017A50BAF770
+Secret size: 32
+secret_ptr: 0000017A50B51B00
+Secret data (32 bytes): DBB83248B6E2B8F5C28987F2EC7F7EE8E4B65F0996175FA83BF8F9991D5325B7
+7 label(s) listed in Reference View
+Hardware breakpoint at 0000017A50B51B00 set!
+Set WP for s ap traffic on 0000017A50B51B00
+Watchpoint hit for s ap traffic at address 00007FFCED0E5B99
+Current data at watchpoint: F3AA65488B0C256000000033D24C8B4318488B493048FF15434403000F1F4400
+Hardware breakpoint (byte, write) at <c hs traffic> (0000017A50B532C0)!
+Watchpoint hit for s ap traffic at address 00007FFCEFF51FFA
+Current data at watchpoint: 33170FB6C9D3C28D4B0149C1E8204133D066898C248800000033D789570866FF
+Hardware breakpoint (byte, write) at <c hs traffic> (0000017A50B532C0)!
+Watchpoint hit for s ap traffic at address 00007FFCED0E5B99
+Current data at watchpoint: F3AA65488B0C256000000033D24C8B4318488B493048FF15434403000F1F4400
+Hardware breakpoint (byte, write) at <s hs traffic> (0000017A50B53E60)!
+Watchpoint hit for s ap traffic at address 00007FFCEFF51FFA
+Current data at watchpoint: 33170FB6C9D3C28D4B0149C1E8204133D066898C248800000033D789570866FF
+Hardware breakpoint (byte, write) at <s hs traffic> (0000017A50B53E60)!
+Watchpoint hit for s ap traffic at address 00007FFCED0E5B99
+Current data at watchpoint: F3AA65488B0C256000000033D24C8B4318488B493048FF15434403000F1F4400
+Hardware breakpoint (byte, write) at <c ap traffic> (0000017A50B51A40)!
+Watchpoint hit for s ap traffic at address 00007FFCEFF51FFA
+Current data at watchpoint: 33170FB6C9D3C28D4B0149C1E8204133D066898C248800000033D789570866FF
+Hardware breakpo
