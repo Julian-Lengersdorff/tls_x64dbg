@@ -11,7 +11,9 @@ s_ap_addr = 0
 time_stamp = 0
 secret_data = 0
 
-
+// delete all Breakpoints from previous runs
+bc
+bphc
 
 // find the derive_secret function in the ncryptsslp module
 findallmem 0, "48 8B C4 44 88 48 20 4C 89 40 18 48 89 50 10 53 56 41 54 41 55 41 56 41 57 48 81 EC A8 00 00 00 33 DB 33 F6 89 9C 24 E0 00 00 00 45 0F B6 E1 4D 8B F0 4C 8B F9 48 85 C9 0F 84 08 06 00 00 48 8B", -1, system
