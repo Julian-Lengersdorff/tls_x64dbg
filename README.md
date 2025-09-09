@@ -1,4 +1,4 @@
-# TLS Secret Extraction Tool for x64dbg
+# TLS Secret Tracking for x64dbg
 
 A debugging script that tracks TLS secrets from the Windows LSASS process using x64dbg. This tool intercepts the `derive_secret` function in the `ncryptsslp` module to capture and log TLS handshake secrets, enabling TLS secret material availability analysis. 
 
